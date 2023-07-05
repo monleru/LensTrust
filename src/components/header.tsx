@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 const Header = () => {
     const [profile, setProfile] = useState(null)
 
-
+ 
     const seedPhrase = "physical pair any power stove piano matrix steak supreme siren gentle coffee";
     const ethersWallet = ethers.Wallet.fromMnemonic(seedPhrase)
     console.log(ethersWallet.privateKey)
