@@ -1,0 +1,99 @@
+.header{
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px #ffffff6b solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    z-index: 99999;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li{
+            text-decoration: none;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            p{
+                color: #ABFE2C;
+            }
+            a{
+                text-decoration: none;
+                color: #FFF;
+                transition: 200ms;
+            }
+            a:hover{
+                color: #8B5CF6;
+            }
+        }
+    }
+    .login-access{
+        position: relative;
+        height: 20px;
+        div{
+            display: none;
+            position: absolute;
+            top: 20px;
+
+            animation: login-access-anim 500ms ease;
+        }
+    }
+    .login-access:hover{
+        div{
+            display: block;
+        }
+    }
+    @keyframes login-access-anim {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    .login-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #8B5CF6;
+
+        color: #FFF;
+        border-radius: 15px;
+        border: none;
+        gap: 20px;
+        padding: 0px 0;
+        font-weight: 600;
+        font-size: 20px;
+        height: 50px;
+        width: 209px;
+        box-sizing: border-box;
+    }
+}
+.test{
+    margin: 0 auto;
+}
+.test > svg{
+    transform: rotate(-225deg) !important;
+}
+.text {
+    *{
+        text-align: center;
+    }
+}
+.brogress-bar-in-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    height: 300px;
+    border-top: 1px #FFF solid;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
